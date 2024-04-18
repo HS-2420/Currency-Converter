@@ -17,6 +17,17 @@ body{
     width: 45vh;
     border-radius: 1rem;
 }
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+#img{
+    background-image: url(logo.png);
+    background-size: cover;
+    background-position: center;
+    height: 30px;
+    width: 30px;
+}
 form{
     margin: 2rem 0 1rem 0;
 }
@@ -108,6 +119,9 @@ form button:hover{
         padding:1rem;
         width: 35vh;
     } 
+    #header #img{
+        display: none;
+    }
     .drop-down i{
         font-size: 1rem;
     }
