@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Helvetica;
+}
+body{
+    display: flex;
+    background-color: #AC7D88;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+#container{
+    background-color: #FDF0D1;
+    padding:2rem;
+    min-height:fit-content;
+    width: 45vh;
+    border-radius: 1rem;
+}
+form{
+    margin: 2rem 0 1rem 0;
+}
+form select,button,input{
+    width: 100%;
+    border: none;
+    outline: none; 
+    border-radius: 0.70rem;
+}
+form input{
+    border: 1px solid rgba(25, 0, 255, 0.146);
+    font-size: 1rem;
+    height: 2.5rem;
+    padding-left: 4%;
+    width: 96%;
+} 
+.amount p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+.from p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+.to p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+.drop-down{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.drop-down i{
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+}
+.select-container img{
+    max-width: 1.5rem;
+}
+.select-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+    border-radius: 0.5rem;
+    border:1px solid rgba(25, 0, 255, 0.146);
+    background-color:rgb(255, 255, 255);
+    padding: 0.5rem;
+}
+.select-container select{
+    font-size: 1rem;
+    background-color: white;
+}
+.select-container select::-webkit-scrollbar{
+    width: 8px;
+}
+.select-container select::-webkit-scrollbar-track{
+    background-color: #fff;
+}
+.select-container select::-webkit-scrollbar-thumb{
+    background-color: #888;
+    border-radius: 8px;
+    border-right: 2px solid #fff;
+}
+.msg{
+    margin: 2rem 0 2rem 0;
+}
+form button{
+    height: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #85586F ;
+    color: white;
+    cursor: pointer;
+}
+form button:hover{
+     opacity: 0.7;
+}
+
+/*From here with the help of media query we chan make it acc to our phone screen */
+
+@media(max-width:600px){
+    #container{
+        padding:1rem;
+        width: 35vh;
+    } 
+    .drop-down i{
+        font-size: 1rem;
+    }
+    .select-container img{
+        max-width: 1.2rem;
+    }
+    .select-container{
+        width: 4.5rem;
+    }
+    .select-container select{
+        font-size: 0.8rem;
+    }
+    form button{
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+}
